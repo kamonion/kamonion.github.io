@@ -1,0 +1,260 @@
+/* 極小デバイス（縦向きモバイル, 576px 未満）*/
+/* Bootstrapではデフォルトで `xs` のメディアクエリは存在しない */
+
+
+/* 特大デバイス（ワイド・デスクトップ, 1200px 以下）*/
+@media (max-width: 1200px) {
+
+}
+
+/* 大デバイス（デスクトップ, 992px 以下）*/
+@media (max-width: 992px) {
+
+    /* body */
+
+    /* main-visual */
+
+    /* logo_navbar */
+
+    .logo{
+        font-size: 2.5rem;
+    }
+
+    .navbar-list{
+        font-size: .8rem;
+    }
+
+    /* main-visual-contents */
+
+    /* main-visual-contents-left */
+
+    /* site-title */
+
+    .site-title p:first-child{
+        font-size: 2rem;
+    }
+
+    /* small-tomato */
+
+    .small-tomato{
+        display: none;
+    }
+
+    /* main-visual-contents-right */
+
+    .big-tomato{
+        display: none;
+    }
+
+    /* tomatos */
+
+    .tomatos{
+        display: block;
+    }
+
+    /* respons-tomatos */
+
+    /* main-visual-small */
+
+    /* section-1 */
+
+    /* section-1-contents */
+
+    .works-section-contents{
+        height: 240vw;
+    }
+    
+    .work{
+        width: 100%;
+        margin-bottom: 0;
+        height: 40vw;
+    }
+
+    .work p{
+        line-height: 40vw;
+    }
+
+    .work:nth-child(odd){
+        margin-right: 0%;    
+    }
+
+    /* section-2 */
+
+    /* section-2-contents */
+
+    .photo{
+        width: 70%;
+    }
+
+    .text{
+        width: 70%;
+        padding-left: 20vw;
+    }
+
+    .section-2-bottom p{
+        font-size: 1rem;
+    }
+
+    /* section-3 */
+
+    /* section-3-contents */
+
+    /* section-4 */
+
+    /* section-4-contents */
+
+}
+
+/* 中デバイス（タブレット, 768px 以下）*/
+@media (max-width: 760px) {
+
+    /* body */
+
+    .small{
+        display: none;
+    }
+
+    /* main-visual */
+
+    .main-visual{
+        display: none;
+    }
+
+    /* logo_navbar */
+
+    .logo{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    /* main-visual-contents */
+
+    /* main-visual-contents-left */
+
+    .main-visual-contents-left{
+        display: none;
+    }
+
+    /* site-title */
+
+    /* small-tomato */
+
+    /* main-visual-contents-right */
+
+    .main-visual-contents-right{
+        display: none;
+    }
+
+    /* tomatos */
+
+    /* respons-tomatos */
+
+    /* main-visual-small */
+
+    .main-visual-small{
+        display: block;
+    }
+
+    /* section-1 */
+
+    /* section-1-contents */
+
+    .works-section{
+        width: 95%;
+    }
+
+    .works-section-contents{
+        height: 300vw;
+    }
+
+    .work{
+        height: 50vw;
+    }
+
+    .work p{
+        line-height: 50vw;
+    }
+
+    /* section-2 */
+
+    /* section-2-contents */
+
+    .photo{
+        width: 90%;
+    }
+
+    .text{
+        width: 90%;
+        font-size: .8rem;
+        padding-left: 20vw;
+        padding-top: 22vh;
+    }
+
+    .text p{
+        text-indent: -3.5rem;
+    }
+    .section-2-bottom::before{
+        top: -3rem;
+        border-width: 3rem 50vw;
+    }
+
+    .section-2-bottom p{
+        font-size: .8rem;
+        letter-spacing: .5rem;
+        padding-top: 3rem;
+    }
+
+    .key-word-1{
+        font-size: 1.3rem;
+    }
+
+    .key-word-2{
+        font-size: 1.3rem;
+    }
+
+    .paragraph-end{
+        display: block;
+    }
+
+    /* section-3 */
+
+    /* section-3-contents */
+
+    .section-3-contents{
+        padding-top: 6rem;
+    }
+
+    .section-3-contents::before{
+        top: -3rem;
+        border-width: 3rem 50vw;
+    }
+
+    .contact-form{
+        width: 90%;
+    }
+
+    .contact-form p{
+        font-size: .8rem;
+    }
+
+    textarea{
+        height: 30vh;
+    }
+
+    .submit-message{
+        width: 90%;
+    }
+
+    /* section-4 */
+
+    /* section-4-contents */
+
+}
+
+/* 小デバイス（横向きモバイル, 576px 以下）*/
+@media (max-width: 576px) {
+
+}
