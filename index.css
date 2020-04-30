@@ -1,0 +1,743 @@
+/* body */
+
+*,*:before,*:after{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+/* start */
+
+.start {
+	background: #eee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate( -50%, -50%);
+	display: none;
+	z-index: 9999;
+    width: 280px;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: .8rem;
+    text-align: center;
+    color: #555;
+}
+
+/* main-visual */
+
+.main-visual{
+    height: 100vh;
+    width: 100%;
+    margin-right: 0;
+}
+
+/* logo_navbar */
+
+.logo-navbar{
+    color: #444;
+    display: flex;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    transition: .5s;
+}
+
+.logo{
+    font-size: 3rem;
+    padding-right: 6rem;
+    cursor: pointer;
+}
+
+.navbar{
+    padding: 0;
+}
+
+.navbar-list{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: .3rem;
+    display: flex;
+}
+
+.navbar-list a{
+    padding-left: 4rem;
+    cursor: pointer;
+    color: #333;
+    transition: .5s;
+}
+
+.navbar-list a:hover{
+    text-decoration: none;
+}
+
+.navbar-list li:first-child{
+    padding-left: 0;
+}
+
+/* main-visual-contents */
+
+.main-visual-contents{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+/* main-visual-contents-left */
+
+.main-visual-contents-left{
+    padding-left: 3rem;
+    height: 100vh;
+    width: 70%;
+    position: relative;
+}
+
+/* site-title */
+
+.site-title{
+    margin-top: 40vh;
+    display: none;
+}
+
+.site-title p{
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: .8rem;
+    color: #555;
+    padding-left: .5rem;
+    cursor: default;
+    transition: .5s;
+}
+
+.site-title p:hover{
+    color: #888;
+}
+
+.site-title p:first-child{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+}
+
+.site-title p:nth-child(3){
+    padding: .6rem 0;
+    padding-left: .5rem;
+}
+
+/* small-tomato */
+
+.small-tomato{
+    height: 25vh;
+    width: 45%;
+    background-image: url(./img/mini_tomato.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+/* main-visual-contents-right */
+
+.main-visual-contents-right{
+    height: 100vh;
+    width: 30%;
+    background-color: rgb(198, 149, 149);
+    position: relative;
+    z-index: -1;
+    display: none;
+}
+
+.main-visual-contents-right::before{
+    position: absolute;
+    left: -31.9rem;
+    content: '';
+    border: 1px solid #eee;
+    border-width: 50vh 16rem 50vh 16rem;
+    border-color: rgb(198, 149, 149) rgb(198, 149, 149) transparent transparent;
+    z-index: -1;
+}
+
+.main-visual-contents-right::after{
+    position: absolute;
+   left: -50rem;
+   content: '';
+   border: 1px solid #eee;
+   border-width: 50vh 25rem 50vh 25rem;
+   border-color: transparent #eee #eee transparent;
+   z-index: -2;
+}
+
+.big-tomato{
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    height: 60%;
+    width: 180%;
+    background-image: url(./img/red_tomato.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* tomatos */
+
+.tomatos{
+    display: none;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    height: 85%;
+    width: 150%;
+}
+
+.tomato-1{
+    height: 65%;
+    background-image: url(./img/red_tomato.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5%;
+}
+
+.tomato-2{
+    height: 30%;
+    background-image: url(./img/mini_tomato.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* respons-tomatos */
+
+.respons-tomatos{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+.respons-tomato-1{
+    position: absolute;
+    top: 50%;
+    height: 30%;
+    width: 100%;
+    background-image: url(./img/red_tomato.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.respons-tomato-2{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    height: 30%;
+    width: 100%;
+    background-image: url(./img/mini_tomato.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.respons-tomato-3{
+    position: absolute;
+    bottom: -15%;
+    left: 40%;
+    height: 30%;
+    width: 100%;
+    background-image: url(./img/last_tomato.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* main-visual-small */
+
+.main-visual-small{
+    display: none;
+    height: 100vh;
+}
+
+/* site-title-small */
+
+.vertical-image{
+    height: 33.3vh;
+}
+
+.image-top{
+    height: 33.3vh;
+    background-image: url(./img/mini_tomato.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.menu-bar{
+    float: right;
+    text-align: right;
+}
+
+.image-top i{
+    font-size: 2rem;
+    color: #fff;
+    opacity: .8;
+    padding: 1rem;
+    padding-bottom: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.image-top i:hover{
+    opacity: .4;
+}
+
+.collapse-bar{
+    color: #fff;
+    opacity: .8;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding-right: 1rem;
+    line-height: 3rem;
+    display: none;
+}
+
+.collapse-bar li{
+    cursor: pointer;
+    transition: .5s;
+}
+
+.collapse-bar a:hover{
+    text-decoration: none;
+}
+
+.collapse-bar li:hover{
+    opacity: .4;
+}
+
+.site-title-small{
+    height: 33.4vh;
+    padding-left: .5rem;
+    padding-top: 6vh;
+}
+
+.site-title-small p{
+    font-size: .5rem;
+    font-weight: 200;
+    letter-spacing: .8rem;
+    color: #555;
+    padding-left: .5rem;
+}
+
+.site-title-small p:first-child{
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+}
+
+.site-title-small p:nth-child(3){
+    padding: .6rem 0;
+    padding-left: .5rem;
+}
+
+.image-bottom{
+    height: 33.3vh;
+    background-image: url(./img/red_tomato.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+/* section-1 */
+
+/* section-1-contents */
+
+.section-1-contents{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 200;
+    letter-spacing: 1rem;
+    cursor: default;
+}
+
+.works-section{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.works-section-contents{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vw;
+}
+
+.work{
+    width: 45%;
+    height: 18vw;
+    margin-bottom: 2vw;
+    background-size: cover;
+    background-position: top;
+    border: 1px solid #eee;
+}
+
+.work p{
+    text-align: center;
+    line-height: 18vw;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    color: #fff;
+    opacity: .8;
+    cursor: pointer;
+    display: none;
+}
+
+.work:nth-child(odd){
+    margin-right: 5%;    
+}
+
+.work-1{
+    background-image: url(./img/mosya_1.jpeg);
+}
+
+.work-1:hover{
+    background:
+        linear-gradient( rgba( 0, 0, 0, .5), rgba( 0, 0, 0, .5)),
+        url(./img/mosya_1.jpeg)
+    ;
+    background-size: cover;
+    background-position: top;
+}
+
+.work-2{
+    background-image: url(./img/mosya_2.jpeg);
+}
+
+.work-2:hover{
+    background:
+        linear-gradient( rgba( 0, 0, 0, .5), rgba( 0, 0, 0, .5)),
+        url(./img/mosya_2.jpeg)
+    ;
+    background-size: cover;
+    background-position: top;
+}
+
+.work-3{
+    background-image: url(./img/mosya_3.jpeg);
+}
+
+.work-3:hover{
+    background:
+        linear-gradient( rgba( 0, 0, 0, .5), rgba( 0, 0, 0, .5)),
+        url(./img/mosya_3.jpeg)
+    ;
+    background-size: cover;
+    background-position: top;
+}
+
+.work-4{
+    background-image: url(./img/mosya_4.png);
+}
+
+.work-4:hover{
+    background:
+        linear-gradient( rgba( 0, 0, 0, .5), rgba( 0, 0, 0, .5)),
+        url(./img/mosya_4.png)
+    ;
+    background-size: cover;
+    background-position: top;
+}
+
+.work-5{
+    background-image: url(./img/isara_模写.png);
+}
+
+.work-5:hover{
+    background:
+        linear-gradient( rgba( 0, 0, 0, .5), rgba( 0, 0, 0, .5)),
+        url(./img/isara_模写.png)
+    ;
+    background-size: cover;
+    background-position: top;
+}
+
+.work-6{
+    background-image: url(./img/jin_模写.png);
+}
+
+.work-6:hover{
+    background:
+        linear-gradient( rgba( 0, 0, 0, .5), rgba( 0, 0, 0, .5)),
+        url(./img/jin_模写.png)
+    ;
+    background-size: cover;
+    background-position: top;
+}
+
+/* section-2 */
+
+.section-2{
+    background: linear-gradient( rgba( 0, 0, 0, .7), rgba( 0, 0, 0, .7)), url(./img/last_tomato.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* section-2-contents */
+
+.section-2-contents{
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+}
+
+.section-2-title{
+    color: #fff;
+    padding-bottom: 4rem;
+}
+
+.profile{
+    position: relative;
+    height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.photo,
+.text{
+    position: absolute;
+}
+
+.photo{
+    width: 60%;
+    height: 60vh;
+    z-index: 1;
+    background-image: url(./img/last_tomato.jpg);
+    background-size: cover;
+    background-position: left;
+    box-shadow: 0 0 15px #333;
+}
+
+.text{
+    width: 60%;
+    height: 60%;
+    background: #fff;
+    bottom: 0;
+    right: 0;
+    padding-top: 25vh;
+    padding-left: 20vw;
+    color: #444;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem;
+    letter-spacing: .1rem;
+    box-shadow: 0 0 15px #333 inset;
+}
+
+.text p{
+    text-indent: -4.5rem;
+}
+
+.section-2-bottom{
+    position: relative;
+    height: 30rem;
+    background-color: #ccc;
+}
+
+.section-2-bottom::before{
+    content: '';
+    position: absolute;
+    top: -5rem;
+    border: 1px solid #ccc;
+    border-width: 5rem 50vw;
+    border-color: transparent #ccc;
+}
+
+.section-2-bottom p{
+    padding-top: 8rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1rem;
+    line-height: 3.5rem;
+}
+
+.key-word-1{
+    color: rgb(167, 100, 100);
+    font-size: 2rem;
+}
+
+.key-word-2{
+    color: rgb(101, 144, 255);
+    font-size: 2rem;
+}
+
+.paragraph{
+    display: block;
+}
+
+/* section-3 */
+
+/* section-3-contents */
+
+.section-3-contents{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.section-3-contents::before{
+    content: '';
+    position: absolute;
+    top: -5rem;
+    border: 1px solid #fff;
+    border-width: 5rem 50vw;
+    border-color: transparent #fff;
+}
+
+.section-3-title{
+    padding-bottom: 3rem;
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-form p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #333;
+}
+
+input{
+    margin-bottom: .5rem;
+}
+
+input,textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    line-height: 2rem;
+    font-size: 1rem;
+    padding: 0 .5rem;
+}
+
+.alert{
+    padding: 0;
+    border: none;
+    font-size: .8rem !important;
+    color: rgb(200, 0, 0) !important;
+    display: none;
+    margin-bottom: .8rem;
+}
+
+.submit{
+    width: 6rem;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 2rem;
+    margin: 1rem auto;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.submit:hover{
+    opacity: .8;
+    font-size: .8rem;
+}
+
+/* submit-correct */
+
+.submit-correct{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.submit-correct-contents{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.submit-message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    background-color: rgba( 255, 255, 255, .8);
+    padding: 2rem;
+    line-height: 2.5rem;
+    border-radius: 5px;
+    color: #333;
+}
+
+.submit-message p{
+    cursor: default;
+    text-align-last: center;
+}
+
+.submit-message a{
+    color: #333;
+}
+
+.submit-message a:hover{
+    text-decoration: none;
+}
+
+.submit-message p:last-child{
+    background-color: #ccc;
+    margin-top: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.submit-message p:last-child:hover{
+    opacity: .5;
+}
+
+/* section-4 */
+
+.section-4{
+    height: 10vh;
+    background-color: rgb(96, 60, 60);
+}
+
+/* section-4-contents */
+
+.section-4-contents p{
+    color: #fff;
+    font-size: .5rem;
+    font-weight: 200;
+    letter-spacing: .5rem;
+    line-height: 10vh;
+    text-align: center;
+}
+
